@@ -1,0 +1,14 @@
+[2015-09-12 12:28:59,028][INFO ][node                     ] [Scream] version[1.7.1], pid[5049], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-09-12 12:28:59,029][INFO ][node                     ] [Scream] initializing ...
+[2015-09-12 12:28:59,106][INFO ][plugins                  ] [Scream] loaded [], sites []
+[2015-09-12 12:28:59,194][INFO ][env                      ] [Scream] using [1] data paths, mounts [[/ (/dev/disk/by-uuid/e53b8216-e7b4-4aad-b91c-396fc625e94d)]], net usable_space [750.9gb], net total_space [912.9gb], types [ext4]
+[2015-09-12 12:29:01,485][INFO ][node                     ] [Scream] initialized
+[2015-09-12 12:29:01,486][INFO ][node                     ] [Scream] starting ...
+[2015-09-12 12:29:01,651][INFO ][transport                ] [Scream] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.35:9300]}
+[2015-09-12 12:29:01,694][INFO ][discovery                ] [Scream] elasticsearch/5FGR9MSwSLy0X6jl95CUKA
+[2015-09-12 12:29:05,460][INFO ][cluster.service          ] [Scream] new_master [Scream][5FGR9MSwSLy0X6jl95CUKA][devr-Inspiron-5520][inet[/192.168.1.35:9300]], reason: zen-disco-join (elected_as_master)
+[2015-09-12 12:29:05,487][INFO ][http                     ] [Scream] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.35:9200]}
+[2015-09-12 12:29:05,487][INFO ][node                     ] [Scream] started
+[2015-09-12 12:29:05,583][INFO ][gateway                  ] [Scream] recovered [0] indices into cluster_state
+[2015-09-12 12:29:51,699][INFO ][cluster.metadata         ] [Scream] [cldb] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [posts]
+[2015-09-12 12:29:52,993][INFO ][cluster.metadata         ] [Scream] [cldb] update_mapping [posts] (dynamic)
