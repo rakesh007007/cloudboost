@@ -4,13 +4,16 @@ var router = express.Router();
 var elasticsearch = require('elasticsearch');
 var redis = require('redis');
 var bodyParser = require('body-parser');
+//elastic search db connection
 var client1 = elasticsearch.Client({
     host: 'localhost:9200'
 });
+// redis db connection
 var client2 = require('redis').createClient();
 client2.on('error', function(err) {
     console.log('Error ' + err);
 });
+//middelwares
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
@@ -19,6 +22,7 @@ app.use(function(err, req, res, next) {
     });
 });
 app.use(bodyParser.json())
+//main routers
 app.get('/index/:string', function(req, res) {
     var string = req.params.string
     client2.set(string, 'value for given key:' + string, function(err, reply) {})
@@ -67,5 +71,5 @@ app.post('/try', function(req, res) {
 var server = app.listen(3000, function() {
     var host = server.address().address;
     var port = server.address().port;
-    console.log('Example app listening at http://%s:%s', host, port);
+    console.log('listening at http://%s:%s', host, port);
 });
